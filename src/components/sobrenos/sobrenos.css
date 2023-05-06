@@ -1,0 +1,13 @@
+.bordersobrenos{
+    border:1px transparent;
+    color: black;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    text-align: left;
+    padding: 10px;
+    padding-left: 10px;
+}
