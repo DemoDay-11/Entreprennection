@@ -16,10 +16,11 @@ body {
 }
 
 .header-home h1 {
-  padding: 40px;
+  margin: 130px 0 0 233px;
 }
 
 .header-home p {
+  margin: 20px 0 0 200px;
   text-align: left;
   font-size: 1.3em;
   padding-left: 40px;

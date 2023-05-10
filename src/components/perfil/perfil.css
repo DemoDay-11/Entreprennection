@@ -9,3 +9,7 @@
     padding: 20px;
     background-color: #304A6E;
 }
+
+.img {
+    cursor: pointer;
+}

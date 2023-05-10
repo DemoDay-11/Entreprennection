@@ -36,3 +36,15 @@
       transform: rotate(360deg);
     }
   }
+
+.PerfilEsquerda {
+  margin: 40px 0px 0px 285px;
+  background-color: #304A6E;
+  width: 400px;
+  height: 170px;
+}
+
+.FotoPerfil img{
+  margin-right: 18rem;
+  margin-top: 2rem;
+}
