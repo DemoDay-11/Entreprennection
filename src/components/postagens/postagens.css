@@ -1,13 +1,9 @@
 .borderpostagens{
-    border:1px transparent;
-    color: white;
     border-radius: 50px;
     padding: 20px;
-    margin-top: 140px;
-    background-color: #304A6E;
 }
 
-h3 {
+h1{
     text-align: left;
     padding: 30px;
     padding-left: 10px;

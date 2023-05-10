@@ -1,0 +1,28 @@
+.imgPost{
+    width: 100%;
+    height: 240px ;
+    object-fit: cover;
+}
+
+.borderpost{    
+    border:1px transparent;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #304A6E;
+}
+
+.imgFotodeperfil{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: center;
+}
+
+.fundopost{
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}

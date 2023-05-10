@@ -12,3 +12,9 @@ h1 {
     padding: 30px;
     padding-left: 10px;
 }
+
+.conexoes{
+    display:flex;
+    flex-direction: row;
+    align-items:center ;
+}

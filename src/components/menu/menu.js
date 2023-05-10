@@ -7,6 +7,7 @@ import Empresas from '../../pages/empresas/empresas';
 import Mentorias from '../../pages/mentorias/mentorias';
 import Notificacoes from '../../pages/notificacoes/notificacoes';
 import Home from '../../pages/home/home';
+import './menu.css'
 
 
 function Menu() {
@@ -17,29 +18,29 @@ function Menu() {
       id="controlled-tab-example"
       activeKey={key}
       onSelect={(k) => setKey(k)}
-      className="mb-3"
+      className="tabs"
     >
-        <Tab eventKey="home" title="Home">
+        <Tab tabClassName='textobranco' eventKey="home" title="Home" >
             <Home />
         </Tab>
 
-        <Tab eventKey="meu-perfil" title="Meu Perfil">
+        <Tab tabClassName='textobranco' eventKey="meu-perfil" title="Meu Perfil">
             <MeuPerfil />
         </Tab>
 
-      <Tab eventKey="feed" title="Feed">
+      <Tab tabClassName='textobranco' eventKey="feed" title="Feed">
         <Feed />
       </Tab>
 
-      <Tab eventKey="empresas" title="Empresas">
+      <Tab tabClassName='textobranco' eventKey="empresas" title="Empresas">
         <Empresas />
       </Tab>
 
-      <Tab eventKey="mentorias" title="Mentorias">
+      <Tab tabClassName='textobranco' eventKey="mentorias" title="Mentorias">
         <Mentorias />
       </Tab>
 
-      <Tab eventKey="notificacoes" title="Notificações">
+      <Tab tabClassName='textobranco' eventKey="notificacoes" title="Notificações">
         <Notificacoes />
       </Tab>
 

@@ -10,7 +10,8 @@ function Perfil() {
         <p>
           Luis Henrique<br/>
           Empresa<br/>
-          São Paulo, São Paulo, Brasil.
+          São Paulo, São Paulo, Brasil.<br></br>
+          Ajudo microempreendedores a crescer negócio através de mentorias.
         </p>   
         
       </header>
