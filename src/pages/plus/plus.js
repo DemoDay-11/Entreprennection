@@ -1,6 +1,6 @@
-import './notificacoes.css';
+import './plus.css';
 
-function Notificacoes() {
+function Plus() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,4 +21,4 @@ function Notificacoes() {
   );
 }
 
-export default Notificacoes;
+export default Plus;

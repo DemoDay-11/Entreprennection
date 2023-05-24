@@ -1,0 +1,24 @@
+.header-landing img{
+    width: 100% !important;
+    height: 80% !important;
+    object-fit: fill !important;
+}
+
+.header-landing {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao{
+    background-color: #012e40 !important;
+    color: white !important;
+}

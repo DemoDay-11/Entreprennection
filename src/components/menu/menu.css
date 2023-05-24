@@ -1,25 +1,21 @@
+.imageredonda {
+  border-radius: 50%;
+  margin: 0 auto !important;
+}
+
 .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #304A6E;
-    border-right: 1px solid #ccc;
-    font-size: 1.2rem;
+  position: fixed;
+    background-color: #023859 !important;
 }
 
-.nav-tabs{
-  border-bottom: none !important;
-  padding-top: 16px;
-}
-
-.nav-tabs .nav-item .nav-link {
- 
-  color: #FFF;
+.nav-pills .nav-item .nav-link {
+  color: #FFF !important;
   border-bottom: none !important;
 }
 
-.nav-tabs .nav-item .nav-link.active {
-  color: #304A6E;
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+  color: #023859 !important;
+  background-color: white !important;
 }
 
 .textobranco{
