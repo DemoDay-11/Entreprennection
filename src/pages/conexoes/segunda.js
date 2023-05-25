@@ -1,9 +1,21 @@
+import Cardconexao from '../../components/cardconexao/cardconexao';
 import './segunda.css';
+
 
 function SegundaConexao() {
   return (
-    <div className="SegundaConexao">
-      TELA DA CONEXÕES
+    
+    <div className="SegundaConexao  m-0 p-0">
+      <h1 className='tituloempresa'>Conexões</h1>
+      <div className='container w-75'>
+        <Cardconexao/>
+        <Cardconexao/>
+        <Cardconexao/>
+        <Cardconexao/>
+        <Cardconexao/>
+        <Cardconexao/>
+        <Cardconexao/>
+      </div>
     </div>
   );
 }

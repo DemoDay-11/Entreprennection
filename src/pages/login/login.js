@@ -37,7 +37,7 @@ function Login() {
                   </Form.Group>
 
                   <div class="d-grid gap-2 col-12">
-                    <Button variant="dark" className='botao-login' onClick={Login}>Entrar</Button>
+                    <Button variant="dark" className='botao-login-1' onClick={Login}>Entrar</Button>
                     <Button variant="dark">Cadastre-se</Button>
                   </div>
 
