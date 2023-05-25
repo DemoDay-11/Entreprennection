@@ -22,3 +22,111 @@
     background-color: #012e40 !important;
     color: white !important;
 }
+
+
+.white {
+    height: 100vh;
+}
+
+.text {
+    margin: 5rem 0 0 35rem;
+}
+
+.cards {
+    margin: 7rem 0 0 9rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card1 {
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 428px;
+}
+
+.card2 {
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 428px;
+}
+
+.card3 {
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 428px;
+}
+
+.card4 {
+    background-color: #d9d9d9;
+    width: 300px;
+    height: 428px;
+}
+
+/* photo1
+photo2
+photo3
+photo4 */
+
+.text1{
+    text-align: center;
+    margin-top: 18rem;
+    font-weight: bold;
+}
+
+.text2{
+    text-align: center;
+    margin-top: 18rem;
+    font-weight: bold;
+}
+
+.text3{
+    text-align: center;
+    margin-top: 18rem;
+    font-weight: bold;
+}
+
+.text4{
+    text-align: center;
+    margin-top: 18rem;
+    font-weight: bold;
+}
+
+.bluepart {
+    height: 100vh;
+    background-color: #4063B8;
+}
+
+.conteudo p, iframe{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.textbluepart p{
+    color: #ffff;
+    display: inline-flex;
+    margin: 5rem 0 0 30rem;
+}
+
+.video iframe {
+    margin: 2rem 0 0 30rem;
+}
+
+.endpart {
+    height: 28vh;
+}
+
+.endtext p{
+    margin: 3rem 0 0 25rem;
+    font-size: 50px;
+}
+
+.botao2{
+    margin: 5rem 0 0 40rem;
+    background-color: #012e40 !important;
+    color: white !important;
+}
