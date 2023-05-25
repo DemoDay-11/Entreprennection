@@ -28,8 +28,14 @@ function Menu() {
       >
       <Row className='p-0 m-0'>
         <Col sm={2} className='tabs' style={{height: "100vh"}}>
+
+        <Nav.Link className='homeImg' eventKey="home">
+          <img src={imagem} width={64} height={64} className='my-3 imageredonda'/>
+        </Nav.Link>
+
           <Nav variant="pills" className="flex-column">
-            <img src={imagem} width={64} height={64} className='my-3 imageredonda'></img>
+          <Nav.Item>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="home" title="Home">Home</Nav.Link>
             </Nav.Item>
