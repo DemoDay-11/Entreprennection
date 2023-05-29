@@ -23,18 +23,28 @@
     color: white !important;
 }
 
+.botao:hover{
+    background-color: white !important;
+    color: #012e40  !important;
+    transition: 500ms linear;
+}
+
 
 .white {
     height: 100vh;
 }
 
-.text {
-    margin: 5rem 0 0 35rem;
+.text h2{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 50px;
 }
 
 .cards {
-    margin: 7rem 0 0 9rem;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    margin-top: 5rem;
     gap: 2rem;
 }
 
@@ -92,7 +102,7 @@ photo4 */
 }
 
 .bluepart {
-    height: 100vh;
+    height: 70vh;
     background-color: #4063B8;
 }
 
@@ -108,25 +118,39 @@ photo4 */
 
 .textbluepart p{
     color: #ffff;
-    display: inline-flex;
-    margin: 5rem 0 0 30rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .video iframe {
-    margin: 2rem 0 0 30rem;
+    background: black;
+    border: none;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 .endpart {
-    height: 28vh;
+    height: 30vh;
 }
 
 .endtext p{
-    margin: 3rem 0 0 25rem;
+    text-align: center;
     font-size: 50px;
+    margin-top: 1rem;
 }
 
 .botao2{
-    margin: 5rem 0 0 40rem;
+    background-color: rgb(0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+.botao2:hover{
     background-color: #012e40 !important;
-    color: white !important;
+    color:  white !important;
+    transition: 500ms linear;
+}
+
+.btn-cds {
+    margin-top: 3rem;
+    text-align: center;
 }
