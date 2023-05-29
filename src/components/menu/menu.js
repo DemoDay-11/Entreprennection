@@ -6,7 +6,7 @@ import Empresas from '../../pages/empresas/empresas';
 import Mentorias from '../../pages/mentorias/mentorias';
 import Plus from '../../pages/plus/plus';
 import Home from '../../pages/home/home';
-import './menu.css'
+import './menu.css';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -14,27 +14,25 @@ import Tab from 'react-bootstrap/Tab';
 import SegundaConexao from '../../pages/conexoes/segunda';
 import imagem from "../../img/site-logo.jpg";
 
-
 function Menu() {
   const [key, setKey] = useState('home');
 
   return (
-    <Tab.Container 
+    <Tab.Container
       id="controlled-tab-example"
       defaultActiveKey="home"
       className="tabs"
-      
-      style={{backgroundColor: 'PINK !important'}}
-      >
+      style={{ backgroundColor: 'PINK !important' }}
+    >
       <Row className='p-0 m-0'>
-        <Col sm={2} className='tabs' style={{height: "100vh"}}>
+        <Col sm={2} className='tabs' style={{ height: "100vh" }}>
 
-        <Nav.Link className='homeImg' eventKey="home">
-          <img src={imagem} width={64} height={64} className='my-3 imageredonda'/>
-        </Nav.Link>
+          <Nav.Link className='homeImg' eventKey="home">
+            <img src={imagem} width={64} height={64} className='my-3 imageredonda' />
+          </Nav.Link>
 
           <Nav variant="pills" className="flex-column">
-          <Nav.Item>
+            <Nav.Item>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="home" title="Home">Home</Nav.Link>
