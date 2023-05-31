@@ -4,63 +4,73 @@
     text-align: center;
     color: #023859;
     font-weight: bolder;
-}
-
-.videoPlus {
+  }
+  
+  .videoPlus {
     margin-left: 6% !important;
-}
-
-.video-area {
+  }
+  
+  .video-area {
     display: flex;
     justify-content: center;
     margin: 20px;
-}
-
-.textPlus {
+  }
+  
+  .textPlus {
     color: #023859;
     font-size: 20px;
     font-weight: bold;
     margin-left: 50px;
     margin-top: 20px;
     width: 500px;
-}
-
-.botao-login {
+  }
+  
+  .botao-login {
     width: 30%;
     margin-top: 4%;
     margin-left: 30%;
     background-color: #00436C !important;
-}
-
-.botao-login:hover {
+  }
+  
+  .botao-login:hover {
     background-color: #0077ffd3 !important;
-}
-
-.botao-login p {
+  }
+  
+  .botao-login p {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bolder;
     padding: 10px;
     margin: auto;
-}
-
-@media only screen and (max-width: 600px) {
+  }
+  
+  @media only screen and (max-width: 600px) {
     .title {
-        margin-right: 0;
+      margin-right: 0;
+      font-size: 24px;
     }
   
-    .video {
-        margin-left: 0 !important;
+    .video-area {
+      flex-direction: column;
     }
   
-    .text {
-        width: auto;
-        margin-left: 20px;
-        margin-top: 20px;
+    .videoPlus {
+      margin-left: 0 !important;
+      width: 100%;
+      height: auto;
+    }
+  
+    .textPlus {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      font-size: 16px;
     }
   
     .botao-login {
-        width: 80%;
-        margin-left: 10%;
+      width: 80%;
+      margin-left: 10%;
+      font-size: 16px;
     }
-}
+  }
+  
