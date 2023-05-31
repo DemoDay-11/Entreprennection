@@ -119,14 +119,14 @@ photo4 */
 .textbluepart p{
     color: #ffff;
     text-align: center;
-    margin-top: 1rem;
+    padding-top: 3rem;
 }
 
 .video iframe {
     background: black;
     border: none;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .endpart {

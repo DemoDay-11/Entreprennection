@@ -1,0 +1,86 @@
+.Home{
+display: flex;
+}
+.Feed {
+    padding-left: 20%;
+    width: 100% !important;
+    justify-content: center;
+}
+.FacaPub {
+    background-color: rgb(129, 129, 129);
+    height: 160px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.FotoPerfil {
+    padding-bottom: 20px !important;
+    margin-left: 30px;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+
+.Trending{
+    margin-left: auto; /* usei essa bomba para deixar a div na direita */
+    float: right;
+    background-color: #023859;
+    height: 100vh;
+    width: 155px;
+    transition: 1.1s;
+}
+
+.Trending:hover{
+    float: right;
+    background-color: #023859 !important;
+    height: 100vh;
+    width: 250px;
+}
+
+.Noticias{
+    padding-top: 2.2rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.CardsNoticiais {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Noticia1, .Noticia2, .Noticia3, .Noticia4 {
+    margin: 0 auto;
+    height: 180px;
+    width: 130px;
+    background-color: white;
+    transition: 1.1s;
+}
+
+.Noticia1, .Noticia2, .Noticia3, .Noticia4 p {
+    text-align: center;
+}
+
+.Noticia1:hover {
+    background-color: #d9d9d9;
+    width: 200px;
+}
+
+.Noticia2:hover {
+    background-color: #d9d9d9;
+    width: 200px;
+}
+
+.Noticia3:hover {
+    background-color: #d9d9d9;
+    width: 200px;
+}
+
+.Noticia4:hover {
+    background-color: #d9d9d9;
+    width: 200px;
+}

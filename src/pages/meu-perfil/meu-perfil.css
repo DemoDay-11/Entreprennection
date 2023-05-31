@@ -1,7 +1,11 @@
-.background{
-    background-color: #D7D7D9;
+
+.meuPerfil {
+    height: 100vh;
+    padding-top: 50px; 
 }
 
-.mPerfil {
-    height: 100vh;
+.Banner {
+    height: 20vh;
+    background-color: rgb(0, 211, 248);
 }
+

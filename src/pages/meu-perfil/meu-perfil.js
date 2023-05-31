@@ -3,12 +3,12 @@ import './meu-perfil.css';
 
 function MeuPerfil() {
   return (
-    <div className='mPerfil'>
+    <div className='meuPerfil'>
       <div className='Banner'>
 
       </div>
       <div className='BackgroundFundo'>
-        <div className='FPerfil'>
+        <div className='FotoPerfil'>
 
         </div>
         <div className='ConteudoPerfil'>
