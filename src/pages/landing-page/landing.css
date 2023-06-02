@@ -31,7 +31,7 @@
 
 
 .white {
-    height: 100vh;
+    height: 80vh;
 }
 
 .text h2{
@@ -102,7 +102,7 @@ photo4 */
 }
 
 .bluepart {
-    height: 70vh;
+    height: 65vh;
     background-color: #4063B8;
 }
 
@@ -153,4 +153,53 @@ photo4 */
 .btn-cds {
     margin-top: 3rem;
     text-align: center;
+}
+
+
+@media (max-width:642px) {
+    .cards{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .text h2{
+        font-size: 25px;
+    }
+    .video{
+        display: none;
+    }
+    .header-landing{
+        flex-direction: column;
+    }
+    .bluepart {
+        display: none;
+    }
+    .endpart{
+        margin-top: 80rem;
+        background-color: #012e40;
+        height: 100%;
+    }
+    .endtext p {
+        padding-top: 2rem;
+        color: white;
+        font-size: 35px;
+    }
+    .btn-cds {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .text h2{
+        font-size: 40px;
+    }
+    .cards{
+        margin-top: 9rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .cards{
+        margin: 0 auto;
+        width: 95%;
+    }
 }

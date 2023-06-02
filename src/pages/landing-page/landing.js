@@ -25,7 +25,7 @@ function Landing(props) {
                 <div className='text'>
                     <h2>Nossos métodos de trabalho</h2>
                 </div>
-                <div className='cards' >
+                <div className='cards'>
                     <div className='card1'>
                         <div className='photo1'></div>
                         <div className='text1'>
