@@ -6,6 +6,7 @@ import Empresas from '../../pages/empresas/empresas';
 import Mentorias from '../../pages/mentorias/mentorias';
 import Plus from '../../pages/plus/plus';
 import Home from '../../pages/home/home';
+import Noticias from '../../pages/noticias/Noticias';
 import './menu.css';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
@@ -87,6 +88,9 @@ function Menu() {
               <Nav.Item>
                 <Nav.Link eventKey="plus" title="Plus">Plus</Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="noticias" title="Noticias">Notícias</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
 
@@ -109,6 +113,9 @@ function Menu() {
               </Tab.Pane>
               <Tab.Pane eventKey="plus">
                 <Plus />
+              </Tab.Pane>
+              <Tab.Pane eventKey="noticias">
+                <Noticias />
               </Tab.Pane>
             </Tab.Content>
           </Col>
@@ -151,6 +158,9 @@ function Menu() {
               <Tab.Pane eventKey="plus">
                 <Plus />
               </Tab.Pane>
+              <Tab.Pane eventKey="noticias">
+                <Noticias />
+              </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>
@@ -179,6 +189,9 @@ function Menu() {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="plus" title="Plus" onClick={handleClose}>Plus</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="noticias" title="Noticias" onClick={handleClose}>Notícias</Nav.Link>
               </Nav.Item>
             </Nav>
         </Offcanvas.Body>

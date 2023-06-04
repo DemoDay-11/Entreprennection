@@ -1,31 +1,53 @@
 import './home.css';
-import { Col, Row } from 'react-bootstrap';
-import imagem from "../../img/cachorro.jpg";
-import Postagens from '../../components/postagens/postagens';
+import avatarRedondo  from '../../img/avatar-redondo.png';
+import fotoPublicacao from '../../img/conexões.jpeg';
+
+
 
 
 function Home() {
   return (
     <div className="Home">
       <div className='Feed'>
-      <div className="card shadow my-4 w-75">
-                <Row className="card-body">
-                    <Col xs={12} sm={12} md={2} lg={2} xl={2} className='d-flex justify-content-center'>
-                        <img className="card-img-top circulo" src={imagem} alt="Card image cap"/>
-                    </Col>
-                </Row>
-                
+        <div className='FacaPub'>
+          <div className='ConteudoPerfil'>
+            <div className='FotoPerfil'>
+              <img src={avatarRedondo} width="80px" height="80px" className='img'></img>
             </div>
-      <div className='pub'>
-                <Row className="card-body my-4 w-75">
-                  <Postagens/>
-                    <Col xs={12} sm={12} md={2} lg={2} xl={2} className='d-flex justify-content-center'>
-                        <img className="card-img-top circulo" src={imagem} alt="Card image cap"/>
-                        <input type='text' value={'olá galera'}></input>
-                    </Col>
-                </Row>
-      </div>
-            
+            <div className='TextoPub'>
+          
+            </div>
+          </div>
+        </div>
+        
+        <div className='Publicacao'>
+          <div className='parteCima'>
+            <div className='fotoPerfil2'>
+              <img src={avatarRedondo} width="60px" height="60px" className='img'></img>
+            </div>
+            <div className='nomesPerfil'>
+              <div className='nomePerfil'>
+                <p>Caique de Oliveira</p>
+              </div>
+              <div className='areaAPerfil'>
+                <p>Mentor</p>
+              </div>
+            </div>
+          </div>
+            <div className='TituloPubli'>
+              <p>Encontro realizado no dia 01/05/2023. Apenas amigos próximos. Foi um ótimo passeio e fico feliz de reencontrar vocês</p>
+            </div>
+            <div className='ConteudoFoto'>
+              <img src={fotoPublicacao} width='100%' height='100%'></img>
+            </div>
+            <div className='BtnsBaixo'>
+            <button class="slide_from_top">Gostei</button>
+            <button class="slide_from_top">Comentar</button>
+            <button class="slide_from_top">Compartilhar</button>
+            <button class="slide_from_top">Enviar</button>
+            </div>
+        </div>
+
       </div>
       
       <div className='Trending'>
