@@ -3,6 +3,10 @@
   height: 80%;
 }
 
+.imgsite-logo{
+  width:64px;
+  height: 64px;
+}
 .card-container{
   height: 75vh;
   width: 75%;
