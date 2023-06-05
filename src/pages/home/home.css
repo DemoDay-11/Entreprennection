@@ -23,15 +23,19 @@
     display: flex;
 }
 
+.fotoPerfil2{
+    cursor: pointer;
+}
+
 .TextoPub{
     padding-top: 5%;
     padding-left: 2%;
 }
 
 .Publicacao {
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: rgb(255, 255, 255);
-    height: 60%;
+    height: 100%;
     width: 55%;
     border-radius: 2px;
 }
@@ -46,18 +50,28 @@
 }
 
 .nomePerfil p{
+    cursor: pointer;
     width: 100%;
-    height: 100%;
     margin-top: 13%;
     margin-left: 10%;
     font-size: 15px;
     font-weight: bold;
 }
 
+.nomePerfil p:hover{
+    color: #585858;
+}
+
+
 .areaAPerfil p {
     margin-left: 40%;
     margin-top: 30%;
     color: grey;
+}
+
+.areaAPerfil p:hover{
+    color:black;
+    text-decoration:underline;
 }
 
 .TituloPubli {
@@ -68,25 +82,127 @@
 }
 
 .BtnsBaixo{
-}
-
-.slide_from_top{
-    background-color: #ffffff; /* Green */
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 43.7px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: initial;
+    column-gap: var(--spacing-half-x);
+    padding: 0.4rem 1.2rem;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition: 0.8ms;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 40px;
 }
 
-.slide_from_top:hover{
-    background-color: black;
-    color: #ffffff;
+.Gostei{
+    display: flex;
 }
 
+
+.Gostei button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+}
+
+.iconeLike{
+    font-size: 18px;
+}
+
+.Gostei button:hover {
+    background-color: #d9d9d9;
+    border: 5px;
+}
+
+.Comentar button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.iconeComentar{
+    font-size: 18px;
+}
+
+.Comentar button:hover{
+    background-color: #d9d9d9;
+    border: 5px;
+}
+
+.Compartilhar button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.iconeCompartilhar{
+    font-size: 18px;
+}
+
+.Compartilhar button:hover{
+    background-color: #d9d9d9;
+    border: 5px;
+}
+
+.Enviar button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.iconeEnviar{
+    font-size: 18px;
+}
+
+.Enviar button:hover{
+    background-color: #d9d9d9;
+    border: 5px;
+}
+
+
+.CaixaFeedback{
+    padding-top: 1%;
+    display: flex;
+    align-items: baseline;
+    gap: 2%;
+}
+
+.adicioneComentario{
+    display: flex;
+    align-items: baseline;
+}
+
+.fotoPerfilComentario{
+    padding-left: 3%;
+    cursor: pointer;
+}
+
+.adicioneComentario{
+    gap: 2%;
+}
+
+.adicioneComentario input {
+    border-color:#d9d9d9;
+    border-radius: 10px;
+}
+
+.enviarComentario {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.enviarComentario:hover{
+    color: #585858;
+}
+
+.addReacao{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.addReacao:hover{
+    color: #585858;
+}
 
 .Trending{
     margin-left: auto; /* usei essa bomba para deixar a div na direita */
