@@ -17,11 +17,11 @@ function Post() {
             <div className="card shadow my-4">
                 <Row className="card-body">
                     {/* imagem de perfil de quem postou */}
-                    <Col xs={12} sm={12} md={1} lg={1} xl={1} className='d-flex justify-content-center'>
+                    <Col xs={2} sm={2} md={2} lg={1} xl={1} className='d-flex justify-content-center'>
                         <img className="card-img-top circulo" src={imagem} alt="Card image cap"/>
                     </Col>
                     {/* nome e profissao de quem postou */}
-                    <Col xs={12} sm={12} md={10} lg={10} xl={10}>  
+                    <Col xs={10} sm={10} md={10} lg={10} xl={10}>  
                         <p className="card-text mb-0 font-nome">Caique de Oliveira</p>
                         <p className="card-text mb-0 font-empresa">Google - Mentor</p>
                     </Col>
