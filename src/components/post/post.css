@@ -1,28 +1,46 @@
-.imgPost{
-    width: 100%;
-    height: 240px ;
-    object-fit: cover;
+.circulo{
+    border-radius: 50% !important;
+    width: 48px !important;
+    height: 48px !important;
+    object-fit: cover !important;
 }
 
-.borderpost{    
-    border:1px transparent;
-    color: white;
-    border-radius: 50px;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #304A6E;
+.font-nome{
+    font-family: "Roboto";
+    font-weight:700;
 }
 
-.imgFotodeperfil{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: center;
+.font-empresa{
+    font-family: "Roboto";
+    font-weight:500;
+    font-size: 12px;
 }
 
-.fundopost{
+.font-bio{
+    font-family: "Roboto";
+    font-weight:400;
+    font-size: 12px;
+}
+
+.react button{
     background-color: white;
     color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
 }
+
+.react button:hover {
+    color: #023859;
+}
+
+.send{
+    background-color: #023859;
+    color: white;
+    border-radius: 10px;
+}
+
