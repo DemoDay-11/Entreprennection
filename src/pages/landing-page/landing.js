@@ -1,6 +1,13 @@
 import './landing.css';
 import { useNavigate } from "react-router-dom";
 import imagem from "../../img/landingpage.png";
+import Card from 'react-bootstrap/Card';
+import { Row, Col, Button } from 'react-bootstrap';
+import compartilhe from '../../img/compartilhe.png';
+import conexoes from '../../img/conexoes.png';
+import metas from '../../img/metas.png';
+import mentorias from '../../img/mentorias.png'
+
 
 function Landing(props) {
     const Navigate = useNavigate();
@@ -9,67 +16,105 @@ function Landing(props) {
         Navigate("/Login")
     }
 
+    function conhecaAPlataforma() {
+        window.location.href="#conheca-a-plataforma";
+    }
+
     return (
         <div className="container-fluid p-0">
             <header className='header-landing'>
                 <img src={imagem}></img>
                 <div className="centered">
                     <div >
-                        <h1 style={{ padding: 0, textAlign: "center", fontFamily: "Roboto", fontWeight: 900 }}>ENTRENNECTION</h1>
+                        <h1 className='text-logo'>ENTRENNECTION</h1>
                         <p>Unindo talentos, tranformando negócios.</p>
-                        <button className="btn botao" type="button" onClick={goToLogin}>Conheça nossa plataforma</button>
+                        <button className="btn botao" type="button" onClick={() => conhecaAPlataforma()}>Conheça nossa plataforma</button>
                     </div>
                 </div>
             </header>
-            <div className='white' >
+
+            <div className='white'>
                 <div className='text'>
                     <h2>Nossos métodos de trabalho</h2>
+                    <br/>
                 </div>
-                <div className='cards'>
-                    <div className='card1'>
-                        <div className='photo1'></div>
-                        <div className='text1'>
-                            <p>Metas</p>
-                        </div>
-                    </div>
-                    <div className='card2'>
-                        <div className='photo2'></div>
-                        <div className='text2'>
-                            <p>Mentorias</p>
-                        </div>
-                    </div>
-                    <div className='card3'>
-                        <div className='photo3'></div>
-                        <div className='text3'>
-                            <p>Conexões</p>
-                        </div>
-                    </div>
-                    <div className='card4'>
-                        <div className='photo4'></div>
-                        <div className='text4'>
-                            <p>Compartilhe sua evolução</p>
-                        </div>
-                    </div>
-                </div>
+
+                <Row className='m-0 p-0'>
+                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
+                        <Card className='shadow card-size'>
+                            <Card.Img variant="top" src={metas} />
+                            <Card.Body>
+                                <Card.Title className='text-center'>Metas</Card.Title>
+                                {/* <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text> */}
+                            </Card.Body>
+                        </Card>
+                                        
+                    </Col>
+                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
+                        <Card className='shadow card-size'>
+                                <Card.Img variant="top" src={mentorias} />
+                                <Card.Body>
+                                    <Card.Title className='text-center'>Mentorias</Card.Title>
+                                    {/* <Card.Text>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text> */}
+                                </Card.Body>
+                            </Card>
+                    </Col>
+                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
+                        <Card className='shadow card-size'>
+                                <Card.Img variant="top" src={conexoes} />
+                                <Card.Body>
+                                    <Card.Title className='text-center'>Conexões</Card.Title>
+                                    {/* <Card.Text>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text> */}
+                                </Card.Body>
+                            </Card>
+                    </Col>
+                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
+                        <Card className='shadow card-size'>
+                                <Card.Img variant="top" src={compartilhe} />
+                                <Card.Body>
+                                    <Card.Title className='text-center'>Compartilhe sua evolução</Card.Title>
+                                    {/* <Card.Text>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text> */}
+                                </Card.Body>
+                            </Card>
+                    </Col>
+                </Row>
+                <br/><br/>
             </div>
-            <div className='bluepart'>
+
+            <div className='bluepart' id="conheca-a-plataforma">
                 <div className='conteudo'>
                     <div className='textbluepart'>
                         <p>Contando sobre a plataforma</p>
                     </div>
                     <div className='video'>
-                        <iframe src="https://player.vimeo.com/video/818941970?h=ee85426980" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/818941970?h=ee85426980" className='iframe-video' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <br/><br/>
+                    <br/><br/>
                 </div>
             </div>
-            <div className='endpart'>
+
+            <div className='endpart p-5'>
                 <div className='endtext'>
                     <p>Quer ter esses benefícios também?</p>
                 </div>
                 <div className='btn-cds'>
-                <button className="btn botao2" type="button" onClick={goToLogin}>Cadastre-se em nossa plataforma</button>
+                    <button className="btn botao2" type="button" onClick={goToLogin}>Cadastre-se em nossa plataforma</button>
                 </div>
             </div>
+
         </div>
     );
 }
