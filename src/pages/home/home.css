@@ -5,12 +5,14 @@
 }
 
 .Feed {
-<<<<<<< HEAD
+
     height: 100%;
     padding-left: 20%;
-=======
+
     /* padding-left: 20%; */
->>>>>>> ee74f8fa3a93331b82556897b192f2a06a44e253
+
+    /* padding-left: 20%; */
+
     width: 100% !important;
     /* justify-content: center; */
     /* height: 100vh !important; */
@@ -19,15 +21,16 @@
 
 .FacaPub {
     background-color: rgb(255, 255, 255);
-<<<<<<< HEAD
     height: 140px;
     width: 55%;
     border-radius: 3px;
-=======
+
     width: 75%;
     /* height: 15%; */
     border-radius: 8px;
->>>>>>> ee74f8fa3a93331b82556897b192f2a06a44e253
+    width: 75%;
+    /* height: 15%; */
+    border-radius: 8px;
 }
 
 .post-home{
