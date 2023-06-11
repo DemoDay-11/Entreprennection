@@ -86,7 +86,7 @@ const Mentorias = () => {
   };
 
   return (
-    <div>
+    <div className="Mentoria">
       <div className="headerM">
       <h1 className="tituloM">Agendamento de mentoria</h1>
       </div>

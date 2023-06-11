@@ -1,26 +1,46 @@
 .Home{
-  display: flex;
+  /* display: flex; */
+  height: 100% !important;
+
 }
+
 .Feed {
+<<<<<<< HEAD
+    height: 100%;
     padding-left: 20%;
+=======
+    /* padding-left: 20%; */
+>>>>>>> ee74f8fa3a93331b82556897b192f2a06a44e253
     width: 100% !important;
-    justify-content: center;
+    /* justify-content: center; */
+    /* height: 100vh !important; */
+    /* background-color: green; */
 }
+
 .FacaPub {
     background-color: rgb(255, 255, 255);
+<<<<<<< HEAD
     height: 140px;
     width: 55%;
-    border-radius: 2px;
+    border-radius: 3px;
+=======
+    width: 75%;
+    /* height: 15%; */
+    border-radius: 8px;
+>>>>>>> ee74f8fa3a93331b82556897b192f2a06a44e253
 }
 
-.FacaPub{
-    margin-top: 1%;
+.post-home{
+    width: 75%;
 }
+
 
 .ConteudoPerfil{
-    padding-top: 5%;
-    padding-left: 5%;
+    /* padding-top: 5%;
+    padding-left: 5%; */
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .fotoPerfil2{
@@ -34,10 +54,9 @@
 
 .Publicacao {
     margin-top: 1%;
-    background-color: rgb(255, 255, 255);
-    height: 100%;
+    background-color: pink;
     width: 55%;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .parteCima {
@@ -205,19 +224,19 @@
 }
 
 .Trending{
-    margin-left: auto; /* usei essa bomba para deixar a div na direita */
-    float: right;
-    background-color: #023859;
-    height: 100vh;
-    width: 12%;
+    /* margin-left: auto;
+    float: right; */
+    /* background-color: #023859; */
+    /* height: 100%; */
+    width: 100%;
     transition: 1.1s;
 }
 
 .Trending:hover{
-    float: right;
+    /* float: right; */
     background-color: #023859 !important;
-    height: 100vh;
-    width: 18%;
+    /* height: 100vh; */
+    width: 100%;
 }
 
 .Noticias{
@@ -267,27 +286,17 @@
 }
 
 
-@media (max-width:642px) {
-    .Home{
-        padding: 0 0 0 0;
-        width: 100%;
-    }
-    .Feed{
-        padding: 0 0 0 0;
-        width: 100vw;
-    }
-    .Trending {
-        display: none;
-    }
-}
 
 @media (max-width:768px) {
-    .Trending {
-        display: none;
+    .FacaPub{
+        width: 95%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .post-home{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
-
-@media (max-width:1024px) {
-
-}

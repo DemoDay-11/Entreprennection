@@ -1,7 +1,7 @@
 .header-landing img{
     width: 100% !important;
-    height: 80% !important;
-    object-fit: fill !important;
+    height: 100% !important;
+    object-fit: cover !important;
 }
 
 .header-landing {
@@ -29,15 +29,19 @@
     transition: 500ms linear;
 }
 
-
 .white {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
 }
 
 .text h2{
     margin-top: 6rem;
     text-align: center;
-    font-size: 50px;
+    font-size: 38px;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
 .cards {
@@ -102,8 +106,7 @@ photo4 */
 }
 
 .bluepart {
-    height: 65vh;
-    background-color: #4063B8;
+    background-color: #5E8AF4;
 }
 
 .conteudo p, iframe{
@@ -115,44 +118,74 @@ photo4 */
     font-size: 50px;
 }
 
-
 .textbluepart p{
+    font-size: 40px;
     color: #ffff;
     text-align: center;
     padding-top: 3rem;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
+.video{
+    width: 90%;
+    padding-left: 10%;
+    height: 360px;
+ }
+
 .video iframe {
-    background: black;
     border: none;
     margin: 0 auto;
     margin-top: 2rem;
 }
 
+.iframe-video{
+    width: 100%;
+    height: 100%;
+}
+
 .endpart {
-    height: 30vh;
+    color: black;
 }
 
 .endtext p{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 1rem;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
 .botao2{
-    background-color: rgb(0, 0, 0) !important;
+    background-color: #012e40 !important;
     color: #ffffff !important;
 }
 
 .botao2:hover{
-    background-color: #012e40 !important;
+    background-color: #000 !important;
     color:  white !important;
     transition: 500ms linear;
 }
 
 .btn-cds {
-    margin-top: 3rem;
     text-align: center;
+}
+
+.card-size{
+    width: 90% !important;
+}
+
+.text-logo{
+    padding: 0;
+    text-align: "center";
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+@media (max-width:576px) {
+    .card-size{
+        width: 100% !important;
+    }
 }
 
 
@@ -162,27 +195,18 @@ photo4 */
         flex-direction: column;
     }
     .text h2{
-        font-size: 25px;
-    }
-    .video{
-        display: none;
-    }
-    .header-landing{
-        flex-direction: column;
-    }
-    .bluepart {
-        display: none;
-    }
-    .endpart{
-        margin-top: 80rem;
-        background-color: #012e40;
-        height: 100%;
+        font-size: 28px;
     }
     .endtext p {
-        padding-top: 2rem;
-        color: white;
-        font-size: 35px;
+        font-size: 28px;
     }
+    .textbluepart p {
+        font-size: 28px;
+    }
+    .video{
+       height: 240px;
+    }
+
     .btn-cds {
         padding-bottom: 3rem;
     }
@@ -190,10 +214,20 @@ photo4 */
 
 @media (max-width:768px) {
     .text h2{
-        font-size: 40px;
+        font-size: 32px;
+        padding: 0px 10px;
+    }
+    .endtext p {
+        font-size: 32px;
+    }
+    .textbluepart p {
+        font-size: 32px;
     }
     .cards{
         margin-top: 9rem;
+    }
+    .header-landing{
+        height: 100vh;
     }
 }
 
