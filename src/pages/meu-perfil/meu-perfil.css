@@ -1,11 +1,35 @@
 
+
+
+
+
 .meuPerfil {
     height: 100vh;
     padding-top: 50px; 
 }
 
+
+
 .Banner {
+    
     height: 20vh;
-    background-color: rgb(0, 211, 248);
+    width: auto;
+    background-color: rgb(255, 255, 255);
 }
 
+.FotoPerfil{
+    position: relative;
+    border-radius: 100px;
+    height: 20vh;
+    width: 10vw;
+    background-color: black;
+}
+
+.BackgroundFundo{
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 2px;
+    height: 70vh;
+    width: 70vw;
+    background-color: aliceblue;
+}
