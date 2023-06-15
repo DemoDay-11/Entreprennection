@@ -95,7 +95,7 @@ function Menu() {
           </Col>
 
           <Col md={10} lg={10} className='offset-md-2 offset-lg-2 p-0'>
-            <Tab.Content style={{backgroundColor: "#D9D9D9"}}>
+            <Tab.Content style={{backgroundColor: "#D9D9D9", height: "100%"}}>
               <Tab.Pane eventKey="home">
                 <Home />
               </Tab.Pane>

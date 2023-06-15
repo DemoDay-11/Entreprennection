@@ -1,4 +1,3 @@
-
 import './meu-perfil.css';
 
 function MeuPerfil() {
