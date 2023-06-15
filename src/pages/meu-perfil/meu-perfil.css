@@ -20,33 +20,48 @@
     height: 20vh;
     width: 10vw;
     background-color: black;
-    margin-left: 6.7%;
+    margin-left: 8.5%;
     margin-top: 5%;
     transition: all 1s;
 }
 
-.ConteudoPerfil{
-    width: 100%;
-    height: auto;
-    display: flex;
+.BackgroundFundo{
+    margin: 0 auto;
+    margin-top: 6.5%;
+    border-radius: 2px;
+    height: 60vh;
+    width: 70vw;
+    background-color: rgb(117, 117, 117);
+}
+
+.TextosPerfil{
+    margin-left: 3%;
+    width: 50%;
+    align-content: flex-start;
 }
 
 .NomePerfil p{
-    display: flex;
-    margin-top: 10%;
+    color: black;
+    margin: 0;
     font-size: 30px;
     font-weight: bold;
+}
+
+.Produto p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.DescricaoPerfil{
+    color: #cccccc;
+    font-size: 20px;
 }
 
 .AreaAtuacao{
     
 }
 
-.BackgroundFundo{
-    margin: 0 auto;
-    margin-top: 5%;
-    border-radius: 2px;
-    height: 60vh;
-    width: 70vw;
-    background-color: rgb(255, 255, 255);
-}
+
+

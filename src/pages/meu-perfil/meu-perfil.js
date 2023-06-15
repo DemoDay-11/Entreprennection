@@ -1,5 +1,6 @@
 import './meu-perfil.css';
 import FotoPerfil from './components/FotoPerfil';
+import CardConexoes from './components/CardConexoes';
 
 function MeuPerfil() {
   return (
@@ -11,14 +12,24 @@ function MeuPerfil() {
         </div>
         
       <div className='BackgroundFundo'>
-        
-        <div className='ConteudoPerfil'>
-          <div className='NomePerfil'>
-            <p>Bubu Modas</p>
-          </div>
-          <div className='AreaAtuacao'>
-            
-          </div>
+        <div className='TextosPerfil'>
+            <div className='NomePerfil'>
+              <p>Bubu Modas</p>
+            </div>
+            <div className='Produto'>
+              <p>Roupas Premium</p>
+            </div>
+            <div className='DescricaoPerfil'>
+            <p>Vendo roupa a 5 anos e meu negocio está precisando de parceiros.</p>
+            </div>
+        </div>
+
+        <div className='Conexões'>
+          <CardConexoes />
+        </div>
+
+        <div className='Postagens'>
+          
         </div>
       </div>
     </div>
