@@ -1,8 +1,5 @@
 
 
-
-
-
 .meuPerfil {
     height: 100vh;
     padding-top: 50px; 
@@ -11,25 +8,45 @@
 
 
 .Banner {
-    
     height: 20vh;
     width: auto;
     background-color: rgb(255, 255, 255);
 }
 
 .FotoPerfil{
-    position: relative;
+    cursor: pointer;
+    position: absolute;
     border-radius: 100px;
     height: 20vh;
     width: 10vw;
     background-color: black;
+    margin-left: 6.7%;
+    margin-top: 5%;
+    transition: all 1s;
+}
+
+.ConteudoPerfil{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.NomePerfil p{
+    display: flex;
+    margin-top: 10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.AreaAtuacao{
+    
 }
 
 .BackgroundFundo{
     margin: 0 auto;
     margin-top: 5%;
     border-radius: 2px;
-    height: 70vh;
+    height: 60vh;
     width: 70vw;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
