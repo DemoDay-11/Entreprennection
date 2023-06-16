@@ -7,7 +7,7 @@
 .Feed {
 
     height: 100%;
-    padding-left: 20%;
+    /* padding-left: 20%; */
 
     /* padding-left: 20%; */
 
@@ -293,8 +293,8 @@
 @media (max-width:768px) {
     .FacaPub{
         width: 95%;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* padding-left: 16px;
+        padding-right: 16px; */
     }
     .post-home{
         width: 100%;
@@ -302,4 +302,12 @@
         padding-right: 16px;
     }
 }
+
+
+@Media (max-width:426px) {
+    .icon-react{
+        font-size:11px ;
+    }
+}
+
 

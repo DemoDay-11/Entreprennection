@@ -17,13 +17,13 @@ function Home() {
               {/* container de nova publicação  */}
               <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center p-0'>
                 <Row className='FacaPub d-flex align-items-center py-4'>
-                  <Col xs={2} sm={2} md={1} lg={1} xl={1}>
+                  <Col xs={2} sm={2} md={1} lg={2} xl={1} className='pe-lg-1 d-flex justify-content-center'>
                     <img src={avatarRedondo} width="48px" height="48px"></img>
                   </Col>
-                  <Col xs={8} sm={8} md={10} lg={10} xl={10}>
+                  <Col xs={8} sm={8} md={10} lg={8} xl={10}>
                     <Form.Control aria-label="First name" />
                   </Col>
-                  <Col xs={2} sm={2} md={1} lg={1} xl={1} className='p-0'>
+                  <Col xs={2} sm={2} md={1} lg={2} xl={1} className='d-flex justify-content-center'>
                     <button className='send'>
                       <FiSend />
                     </button>    

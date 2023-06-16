@@ -1,34 +1,29 @@
-.title {
-    margin-top: 1%;
-    margin-right: 10%;
-    text-align: center;
-    color: #023859;
-    font-weight: bolder;
-  }
-  
-  .videoPlus {
-    margin-left: 6% !important;
-  }
-  
-  .video-area {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+.video-area{
+  /* width: 90%; */
+  height: 360px;
+}
+
+.video-area iframe {
+  border: none;
+  /* margin: 0 auto;
+  margin-top: 2rem; */
+}
+
+.videoPlus{
+  width: 100%;
+  height: 100%;
+}
   
   .textPlus {
     color: #023859;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 50px;
-    margin-top: 20px;
-    width: 500px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    /* font-weight: bold; */
   }
   
   .botao-login {
-    width: 30%;
-    margin-top: 4%;
-    margin-left: 30%;
+    /* width: 30%; */
     background-color: #00436C !important;
   }
   
@@ -43,34 +38,25 @@
     padding: 10px;
     margin: auto;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .title {
-      margin-right: 0;
-      font-size: 24px;
-    }
-  
-    .video-area {
-      flex-direction: column;
-    }
-  
-    .videoPlus {
-      margin-left: 0 !important;
-      width: 100%;
-      height: auto;
-    }
-  
-    .textPlus {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 20px;
-      font-size: 16px;
-    }
-  
-    .botao-login {
-      width: 80%;
-      margin-left: 10%;
-      font-size: 16px;
-    }
+
+/* @media (max-width:1165px) {
+  .Plus{
+    height: 100% !important;
   }
+} */
+
+@media (max-width:768px) {
+  .video-area {
+     height: 240px;
+  }
+}
+
+@media (min-width:1108px) {
+  .Plus{
+    height: 100vh;
+  }
+}
+ 
+ 
+ 
   

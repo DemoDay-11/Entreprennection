@@ -64,13 +64,13 @@ function Post() {
                     </Row>
 
                     <Row> 
-                        <Col xs={2} sm={2} md={2} lg={1} xl={1}>
+                        {/* <Col  xs={2} sm={2} md={2} lg={1} xl={1} className='d-none d-sm-block'>
                             <img className="card-img-top circulo" src={avatarRedondo} alt="Card image cap"/>
+                        </Col> */}
+                        <Col xs={11} sm={11} md={11} lg={11} xl={11} > 
+                            <Form.Control placeholder='Comentar...'/> 
                         </Col>
-                        <Col xs={9} sm={9} md={9} lg={10} xl={10}> 
-                            <Form.Control placeholder='Digite o que achou sobre isso...'/> 
-                        </Col>
-                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='m-0 p-0'>
+                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='m-0 p-0 d-flex justify-content-center'>
                             <button className='send'>
                                 <FiSend />
                             </button>    
