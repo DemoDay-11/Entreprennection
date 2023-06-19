@@ -29,7 +29,7 @@
     margin: 0 auto;
     margin-top: 6.5%;
     border-radius: 2px;
-    height: 60vh;
+    height: 70vh;
     width: 70vw;
     background-color: rgb(117, 117, 117);
 }
@@ -63,5 +63,26 @@
     
 }
 
+.Conexões{
+    margin-left: 3%;
+    width: 94%;
+}
 
+.Conexões p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Postagens{
+    padding-top: 2%;
+    margin-left: 3%;
+    width: 94%;
+}
+
+.Postagens p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
 

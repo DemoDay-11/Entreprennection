@@ -1,0 +1,15 @@
+.figure-img {
+    cursor: pointer;
+}
+
+.figure-caption{
+    color: black !important;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6ms;
+}
+
+.figure-caption:hover{
+    color: #494949 !important;
+}

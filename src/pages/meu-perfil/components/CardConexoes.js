@@ -4,9 +4,10 @@ import Container from 'react-bootstrap/Container';
 import avatarConexoes from './images/avatarConexoes.png';
 import Row from 'react-bootstrap/Row';
 import Figure from 'react-bootstrap/Figure';
+import './CardsConexoes.css';
 
 function BodyShorthandExample() {
-  return <Card body>
+  return <Card>
                 <Container>
                     <Row>
                         

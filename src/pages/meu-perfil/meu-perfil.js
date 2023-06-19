@@ -1,6 +1,7 @@
 import './meu-perfil.css';
 import FotoPerfil from './components/FotoPerfil';
 import CardConexoes from './components/CardConexoes';
+import CardPostagens from './components/CardPostagens';
 
 function MeuPerfil() {
   return (
@@ -25,11 +26,13 @@ function MeuPerfil() {
         </div>
 
         <div className='Conexões'>
+          <p>Conexões</p>
           <CardConexoes />
         </div>
 
         <div className='Postagens'>
-          
+          <p>Postagens</p>
+          <CardPostagens />
         </div>
       </div>
     </div>
