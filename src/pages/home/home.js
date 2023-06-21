@@ -4,6 +4,7 @@ import { Col,Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Post from '../../components/post/post';
 import { FiSend  } from 'react-icons/fi';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -24,9 +25,9 @@ function Home() {
                     <Form.Control aria-label="First name" />
                   </Col>
                   <Col xs={2} sm={2} md={1} lg={2} xl={1} className='d-flex justify-content-center'>
-                    <button className='send'>
+                    <Button className='send'>
                       <FiSend />
-                    </button>    
+                    </Button>    
                   </Col>
                 </Row>
               </Col>

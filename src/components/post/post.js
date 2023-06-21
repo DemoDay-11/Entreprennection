@@ -70,10 +70,10 @@ function Post() {
                         <Col xs={11} sm={11} md={11} lg={11} xl={11} > 
                             <Form.Control placeholder='Comentar...'/> 
                         </Col>
-                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='m-0 p-0 d-flex justify-content-center'>
-                            <button className='send'>
+                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='m-0 p-0 d-flex just'>
+                            <Button className='send'>
                                 <FiSend />
-                            </button>    
+                            </Button>    
                         </Col>
                     </Row>
                 </Row>

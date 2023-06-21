@@ -1,4 +1,62 @@
+.botao-mentoria {
+  /* width: 30%; */
+  background-color: #00436C !important;
+}
 
+.botao-mentoria:hover {
+  background-color: #0077ffd3 !important;
+}
+
+.botao-mentoria p {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  margin: auto;
+}
+
+.textMentorias {
+  color: #023859;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  /* font-weight: bold; */
+}
+
+.Mentorias{
+  height: 100vh !important;
+}
+
+.titulomentoria{
+  text-align: center;
+  color: #023859;  
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+/* Agende-se já */
+
+.textMentorias {
+  color: #023859;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.agendar{
+  height: 100% !important;
+}
+
+@media (min-width:1024px) {
+  .cont-mentoria{
+    height: 100vh !important;
+  }
+}
+
+
+
+
+/* 
 .Mentoria{
   height: 100vh;
 }
@@ -151,4 +209,4 @@
   
   button:hover {
     background-color: #0091ff;
-  }
+  } */
