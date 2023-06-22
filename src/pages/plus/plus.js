@@ -1,6 +1,8 @@
 import './plus.css';
 import Button from 'react-bootstrap/Button';
 import { Col,Row } from 'react-bootstrap';
+import Pagamento from '../Pagamento/Pagamento';
+import { Link } from 'react-router-dom';
 
 function Plus() {
   return (
@@ -17,7 +19,7 @@ function Plus() {
         </Col>
 
         <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center py-3'>
-          <Button variant="dark" className='botao-login'><p>Quero me tornar PLUS</p></Button>
+          <Button variant="dark" className='botao-login' onClick={Pagamento}><Link to='/Pagamento'><p>Quero me tornar PLUS</p></Link></Button>
         </Col>
       </Row>
     </div>

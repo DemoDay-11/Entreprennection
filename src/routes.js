@@ -5,6 +5,8 @@ import Cadastramento from "./pages/cadastramento/cadastramento";
 
 import Menu from "./components/menu/menu";
 import Landing from "./pages/landing-page/landing";
+import Pagamento from "./pages/Pagamento/Pagamento";
+
 
 const Routes = () => {
   return (
@@ -13,6 +15,7 @@ const Routes = () => {
         <Route path="Login" element={<Login />} />
         <Route path="Signup" element={<Cadastramento />} />
         <Route path="Home" element={<Menu />} />
+        <Route path="Pagamento" element={<Pagamento />} />
       </RoutesDom>
   )
 }
