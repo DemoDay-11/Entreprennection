@@ -6,7 +6,8 @@ import { Row, Col, Button } from 'react-bootstrap';
 import compartilhe from '../../img/compartilhe.png';
 import conexoes from '../../img/conexoes.png';
 import metas from '../../img/metas.png';
-import mentorias from '../../img/mentorias.png'
+import mentorias from '../../img/mentorias.png';
+import Footer from '../../components/footer/footer';
 
 
 function Landing(props) {
@@ -36,6 +37,8 @@ function Landing(props) {
             <div className='white'>
                 <div className='text'>
                     <h2>Nossos métodos de trabalho</h2>
+                    <br/>
+                    <br/>
                     <br/>
                 </div>
 
@@ -91,6 +94,9 @@ function Landing(props) {
                     </Col>
                 </Row>
                 <br/><br/>
+                <br/>
+                <br/>
+                <br/>
             </div>
 
             <div className='bluepart' id="conheca-a-plataforma">
@@ -108,13 +114,17 @@ function Landing(props) {
 
             <div className='endpart p-5'>
                 <div className='endtext'>
+                <br/>
+            <br/>
                     <p>Quer ter esses benefícios também?</p>
                 </div>
                 <div className='btn-cds'>
                     <button className="btn botao2" type="button" onClick={goToLogin}>Cadastre-se em nossa plataforma</button>
                 </div>
             </div>
-
+            <br/>
+            <br/>
+            <Footer></Footer>  
         </div>
     );
 }

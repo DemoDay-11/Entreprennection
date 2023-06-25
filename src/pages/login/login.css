@@ -1,20 +1,23 @@
 .img-login{
   width: 100%;
-  height: 80%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imgsite-logo{
-  width:64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 .card-container{
-  height: 75vh;
+  height: fit-content;
   width: 75%;
 }
 
 .card-login{
   width: 75% !important;
-  margin-top: 15% !important;
+  /* margin-top: 15% !important; */
 }
 
 .form-login {
@@ -27,21 +30,21 @@
 
 @media (max-width: 985px) {
   .card-container{
-    height: 75vh;
+    height: fit-content;
     width: 100%;
   }
 }
 
 @media (max-width: 769px) {
   .card-container{
-    height: 80vh;
+    height: fit-content;
     width: 100%;
   }
 }
 
 @media (max-width: 425px) {
   .card-container{
-    height: 80vh;
+    height: fit-content;
     width: 100%;
   }
 }
@@ -49,7 +52,7 @@
 
 @media (max-width: 375px) {
   .card-container{
-    height: 80vh;
+    height: fit-content;
     width: 100%;
   }
 }

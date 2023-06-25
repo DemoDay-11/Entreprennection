@@ -6,7 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import img from"../../img/site-logo.jpg"
+import img from"../../img/site-logo.jpg";
+import Footer from '../../components/footer/footer';
 
 function Login() {
     const Navigate = useNavigate();
@@ -26,13 +27,13 @@ function Login() {
     
   return (
     <div className='p-0'>
-      <div className='px-1'><img src={img} className='imgsite-logo'></img></div>
+      <div className='px-3 py-2'style={{backgroundColor: "#023859"}}><img src={img} className='imgsite-logo'></img></div>
       <Row className='p-0 m-0'>
-        <Col xs={12} sm={12} md={5} lg={5} xl={5} className='p-0 m-0 d-none d-md-block'>
+        <Col xs={12} sm={12} md={5} lg={5} xl={5} className='p-0 m-0 d-none d-md-block vh-100'>
           <img src={imagem} className='img-login'></img>
         </Col>
 
-        <Col xs={12} sm={12} md={7} lg={7} xl={7} className='p-0 m-0 d-flex justify-content-center'>
+        <Col xs={12} sm={12} md={7} lg={7} xl={7} className='p-0 m-0 d-flex justify-content-center align-items-center vh-100'>
           <div className='d-flex justify-content-center card-container'>
             <div className="card card-login p-3">
               <div className="card-body">
@@ -59,6 +60,11 @@ function Login() {
             </div>
           </div>
         </Col>
+
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} className='p-0 m-0'>
+          <Footer></Footer>
+        </Col>
+        
         
         {/* <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{backgroundColor: "pink"}}>
           meu footer
@@ -150,10 +156,9 @@ function Login() {
         <Modal.Footer className='d-flex justify-content-center'>
           <Button variant="dark" className='botao-login-1' onClick={Login} size="lg">Entrar</Button>
         </Modal.Footer>
-
       </Modal>
-
     </div>
+  
   );
 }
 

@@ -125,7 +125,7 @@ function Menu() {
 
         // menu mobile
         <Row className='p-0 m-0'>
-          <Col xs={12} sm={12} style={{backgroundColor: "#023859"}} >
+          <Col xs={12} sm={12} style={{backgroundColor: "#023859"}}>
             <Row>
               <Col className='d-flex align-items-center' xs={2} sm={1}>
                 <FiMenu color='white' onClick={handleShow} size={48}/>
@@ -139,7 +139,7 @@ function Menu() {
           </Col>
 
           <Col xs={12} sm={12} className='p-0'>
-            <Tab.Content className='h-100' style={{backgroundColor: "#D9D9D9"}}>
+            <Tab.Content className='h-100' style={{backgroundColor: "#D9D9D9 !important"}}>
               <Tab.Pane eventKey="home">
                 <Home />
               </Tab.Pane>
