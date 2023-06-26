@@ -53,13 +53,38 @@
   }
 }
 
+.containercal{
+  background-color: #023859 !important;
+  color: white !important;
+  margin-bottom: 16px;
+  /* width: 90% !important; */
 
-
-
-/* 
-.Mentoria{
-  height: 100vh;
 }
+
+.imgcalen{
+  border-radius: 50% !important;
+    width: 96px !important;
+    height: 96px !important;
+    object-fit: cover !important;
+    margin-top: 16px;
+}
+
+.letra{
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.containerhora{
+  width: 100% !important;
+  margin-bottom: 16px;
+}
+
+
+
+/* .Mentoria{
+  height: 100vh;
+} */
 
 .tituloM {
     padding-top: 20px;
@@ -68,110 +93,11 @@
     font-weight: bolder;
 }
 
-.containerM {
-    width: 100%;
-    height: 80vh;
-    color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 30%;
-  }
-  
-  .calendar {
-    width: 20rem;
-    height: 22rem;
-    background-color: rgb(225, 225, 225);
-    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-    overflow: auto;
-  }
-  
-  .month {
-    width: 100%;
-    height: 6rem;
-    background-color: #3482AE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.5rem;
-    text-align: center;
-    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .month i {
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .month h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .month p {
-    font-size: 1rem;
-  }
-  
-  .weekdays {
-    width: 100%;
-    height: 2rem;
-    padding: 0 0.2rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .weekdays div {
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 0.05rem;
-    width: calc(20rem / 7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .days {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.1rem;
-  }
-  
-  .days div {
-    font-size: 0.8rem;
-    margin: 0.1rem;
-    width: calc(20rem / 7);
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.2s;
-  }
-  
-  .days div:hover:not(.today) {
-    background-color: #262626;
-    border: 0.1rem solid #777;
-    cursor: pointer;
-  }
-  
-  .prev-date,
-  .next-date {
-    opacity: 0.5;
-  }
-  
-  .today {
-    background-color: #0062ff;
-  }
   
   .timeslots {
     background-color: #FFFFFF;
-    width: 30%;
-    height: 47vh;
+    /* width: 30%;
+    height: 47vh; */
     padding: 25px;
     display: inline-block;
     right: 0px;
@@ -179,27 +105,23 @@
     align-items: center;
     margin-top: 1rem;
   }
-
-  .timeslots h1 { 
-    color: #5A5A5A;
-  }
   
   .timeslots div {
     margin-bottom: 0.5rem;
     padding: 0.3rem 1rem;
-    background-color: #3482AE;
+    background-color: #76baff;
     color: white;
     border-radius: 0.3rem;
     cursor: pointer;
   }
   
   .timeslots div:hover {
-    background-color: #000000;
+    opacity: 0.5;
   }
   
-  button {
+  .button-calendar {
     padding: 0.5rem 1rem;
-    background-color: #0008ff;
+    background-color: #023859;
     color: white;
     border: none;
     border-radius: 0.3rem;
@@ -207,6 +129,8 @@
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #0091ff;
-  } */
+  .button-calendar:hover {
+    opacity: 0.5;
+  }
+
+ 

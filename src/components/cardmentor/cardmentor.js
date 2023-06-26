@@ -2,8 +2,15 @@ import './cardmentor.css'
 import { Col, Row } from 'react-bootstrap';
 import imagem from "../../img/cachorro.jpg";
 import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
 
-function Cardmentor() {
+const Cardmentor = (props) => {
+    const [calendario, setCalendario] = useState(false)
+
+    const openCalendar = () => {
+        props.showCalendar(!calendario)
+    }
+
     return (
         <Col xs={12} sm={12} md={6} lg={3} xl={3}>
             <div className="Cardmentor">
@@ -20,7 +27,7 @@ function Cardmentor() {
                                     <p className="card-text mb-0 font-descricao">Amo ensinar, adoro ler e meu hobby é andar de bicicleta</p>
                                 </Col>
                                 <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center pt-2'>
-                                    <Button variant="dark" className='botao-agendar'><p>Agendar</p></Button>
+                                    <Button variant="dark" className='botao-agendar' onClick={openCalendar}><p>Agendar</p></Button>
                                 </Col>
                             </Row>
                         </Col>
