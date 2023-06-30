@@ -105,7 +105,7 @@ function Landing(props) {
                         <p>Contando sobre a plataforma</p>
                     </div>
                     <div className='video'>
-                        <iframe src="https://player.vimeo.com/video/818941970?h=ee85426980" className='iframe-video' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FDXS_vWk_JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <br/><br/>
                     <br/><br/>
