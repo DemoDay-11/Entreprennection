@@ -109,6 +109,10 @@ photo4 */
     background-color: #5E8AF4;
 }
 
+.conteudo{
+    flex-direction: column !important;
+}
+
 .conteudo p, iframe{
     flex-direction: column;
     display: flex;
@@ -128,19 +132,21 @@ photo4 */
 }
 
 .video{
-    width: 90%;
-    padding-left: 10%;
-    height: 360px;
+    width: 70%;
+    /* padding-left: 10%; */
+    height: 480px;
+    /* background-color: brown; */
  }
 
 .video iframe {
     border: none;
-    margin: 0 auto;
-    margin-top: 2rem;
+    /* margin: 0 auto; */
+    /* margin-top: 2rem;
+    justify-content: center; */
 }
 
 .iframe-video{
-    width: 100%;
+    width: 100% !important;
     height: 100%;
 }
 
@@ -204,7 +210,8 @@ photo4 */
         font-size: 28px;
     }
     .video{
-       height: 240px;
+        width: 80%;
+       height: 360px;
     }
 
     .btn-cds {

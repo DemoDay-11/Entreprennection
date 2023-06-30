@@ -9,6 +9,7 @@
   height: 48px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 .card-container{
   height: fit-content;

@@ -19,6 +19,10 @@ function Login() {
     const Cadastramento = () => {
       Navigate("/Signup")
     }
+    
+    const Landing = () => {
+        Navigate("/")
+    }
 
     const [showModal, setShowModal] = useState(false);
     const fecharModal = () => setShowModal(false);
@@ -27,7 +31,7 @@ function Login() {
     
   return (
     <div className='p-0'>
-      <div className='px-3 py-2'style={{backgroundColor: "#023859"}}><img src={img} className='imgsite-logo'></img></div>
+      <div className='px-3 py-2'style={{backgroundColor: "#023859"}}><img src={img} className='imgsite-logo' onClick={Landing}></img></div>
       <Row className='p-0 m-0'>
         <Col xs={12} sm={12} md={5} lg={5} xl={5} className='p-0 m-0 d-none d-md-block vh-100'>
           <img src={imagem} className='img-login'></img>

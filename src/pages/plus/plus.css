@@ -3,6 +3,10 @@
   height: 360px;
 }
 
+.Plus{
+  height: 100% !important;
+}
+
 .video-area iframe {
   border: none;
   /* margin: 0 auto;
@@ -55,9 +59,9 @@
   }
 }
 
-@media (min-width:1108px) {
+@media (min-width:576px) {
   .Plus{
-    height: 100vh;
+    height: 100vh!important;
   }
 }
  

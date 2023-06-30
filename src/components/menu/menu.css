@@ -6,6 +6,10 @@
   height: 15%;
 }
 
+.fundo{
+  background-color: #D9D9D9 !important;
+}
+
 .tabs {
   position: fixed;
   background-color: #023859 !important;

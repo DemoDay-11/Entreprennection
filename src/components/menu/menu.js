@@ -27,26 +27,26 @@ function Menu() {
 
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
-  	function getCurrentDimension(){
-    	return {
-      		width: window.innerWidth,
-      		height: window.innerHeight
-    	}
-  	}
+  function getCurrentDimension(){
+    return {
+        width: window.innerWidth,
+        height: window.innerHeight
+    }
+  }
+
+  useEffect(() => {
+      const updateDimension = () => {
+          setScreenSize(getCurrentDimension())
+      }
+      window.addEventListener('resize', updateDimension);
+      console.log("largura:", screenSize.width);
+      console.log("altura:", screenSize.height);
   
-  	useEffect(() => {
-    		const updateDimension = () => {
-      			setScreenSize(getCurrentDimension())
-    		}
-    		window.addEventListener('resize', updateDimension);
-        console.log("largura:", screenSize.width);
-        console.log("altura:", screenSize.height);
-    
-		
-    		return(() => {
-        		window.removeEventListener('resize', updateDimension);
-    		})
-  	}, [screenSize])
+  
+      return(() => {
+          window.removeEventListener('resize', updateDimension);
+      })
+  }, [screenSize])
 
   return (
     <Tab.Container
@@ -95,7 +95,7 @@ function Menu() {
           </Col>
 
           <Col md={10} lg={10} className='offset-md-2 offset-lg-2 p-0'>
-            <Tab.Content style={{backgroundColor: "#D9D9D9", height: "100%"}}>
+            <Tab.Content className='h-100 fundo'>
               <Tab.Pane eventKey="home">
                 <Home />
               </Tab.Pane>
@@ -112,7 +112,7 @@ function Menu() {
                 <Mentorias />
               </Tab.Pane>
               <Tab.Pane eventKey="plus">
-                <Plus />
+                <Plus /> 
               </Tab.Pane>
               <Tab.Pane eventKey="noticias">
                 <Noticias />
@@ -139,7 +139,7 @@ function Menu() {
           </Col>
 
           <Col xs={12} sm={12} className='p-0'>
-            <Tab.Content className='h-100' style={{backgroundColor: "#D9D9D9 !important"}}>
+            <Tab.Content className='h-100 fundo'>
               <Tab.Pane eventKey="home">
                 <Home />
               </Tab.Pane>

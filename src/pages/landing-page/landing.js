@@ -100,12 +100,12 @@ function Landing(props) {
             </div>
 
             <div className='bluepart' id="conheca-a-plataforma">
-                <div className='conteudo'>
+                <div className='conteudo d-flex'>
                     <div className='textbluepart'>
                         <p>Contando sobre a plataforma</p>
                     </div>
-                    <div className='video'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FDXS_vWk_JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div className='video align-self-center'>
+                        <iframe src="https://www.youtube.com/embed/FDXS_vWk_JI" className='iframe-video' frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <br/><br/>
                     <br/><br/>
