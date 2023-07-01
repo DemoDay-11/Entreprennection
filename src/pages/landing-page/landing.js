@@ -1,12 +1,8 @@
 import './landing.css';
 import { useNavigate } from "react-router-dom";
 import imagem from "../../img/landingpage.png";
-import Card from 'react-bootstrap/Card';
+
 import { Row, Col, Button } from 'react-bootstrap';
-import compartilhe from '../../img/compartilhe.png';
-import conexoes from '../../img/conexoes.png';
-import metas from '../../img/metas.png';
-import mentorias from '../../img/mentorias.png';
 import Footer from '../../components/footer/footer';
 
 
@@ -37,66 +33,74 @@ function Landing(props) {
             <div className='white'>
                 <div className='text'>
                     <h2>Nossos métodos de trabalho</h2>
-                    <br/>
-                    <br/>
-                    <br/>
                 </div>
 
-                <Row className='m-0 p-0'>
-                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
-                        <Card className='shadow card-size'>
-                            <Card.Img variant="top" src={metas} />
-                            <Card.Body>
-                                <Card.Title className='text-center'>Metas</Card.Title>
-                                {/* <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text> */}
-                            </Card.Body>
-                        </Card>
-                                        
-                    </Col>
-                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
-                        <Card className='shadow card-size'>
-                                <Card.Img variant="top" src={mentorias} />
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Mentorias</Card.Title>
-                                    {/* <Card.Text>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
-                                    </Card.Text> */}
-                                </Card.Body>
-                            </Card>
-                    </Col>
-                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
-                        <Card className='shadow card-size'>
-                                <Card.Img variant="top" src={conexoes} />
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Conexões</Card.Title>
-                                    {/* <Card.Text>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
-                                    </Card.Text> */}
-                                </Card.Body>
-                            </Card>
-                    </Col>
-                    <Col xs={12} sm={6} md={6} lg={3} xl={3} className='p-3 d-flex justify-content-center'>
-                        <Card className='shadow card-size'>
-                                <Card.Img variant="top" src={compartilhe} />
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Compartilhe sua evolução</Card.Title>
-                                    {/* <Card.Text>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
-                                    </Card.Text> */}
-                                </Card.Body>
-                            </Card>
-                    </Col>
-                </Row>
-                <br/><br/>
-                <br/>
-                <br/>
-                <br/>
+            <div class="container">
+                <div class="card">
+                    <div class="img">
+                        <span>Conexões</span>
+                    </div>
+
+                    <div class="content">
+                        <span class="title">Conexões</span>
+                        <p class="desc">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
+                        <p class="descMobile">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
+                    </div>
+
+                    <div class="arrow">
+                        <span>&#8673;</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img2">
+                        <span>Mentorias</span>
+                    </div>
+
+                    <div class="content">
+                        <span class="title">Mentorias</span>
+                        <p class="desc">Nosso programa de mentoria, onde o conhecimento encontra o crescimento pessoal e profissional. Aqui, acreditamos no poder transformador das conexões mentor-mentorado e nos esforçamos para fornecer uma plataforma que facilite essa jornada enriquecedora.</p>
+                        <p class="descMobile">Nosso programa de mentoria, onde o conhecimento encontra o crescimento pessoal e profissional. Aqui, acreditamos no poder transformador das conexões mentor-mentorado e nos esforçamos para fornecer uma plataforma que facilite essa jornada enriquecedora.</p>
+                    </div>
+
+                    <div class="arrow">
+                        <span>&#8673;</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img3">
+                        <span>Metas</span>
+                    </div>
+
+                    <div class="content">
+                        <span class="title">Metas</span>
+                        <p class="desc">Um espaço dedicado para você traçar seu caminho rumo ao sucesso e realização pessoal. Aqui, acreditamos que metas bem definidas são o combustível que impulsiona grandes conquistas e queremos ajudá-lo a alcançar o máximo do seu potencial.</p>
+                        <p class="descMobile">Um espaço dedicado para você traçar seu caminho rumo ao sucesso e realização pessoal. Aqui, acreditamos que metas bem definidas são o combustível que impulsiona grandes conquistas e queremos ajudá-lo a alcançar o máximo do seu potencial.</p>
+                    </div>
+
+                    <div class="arrow">
+                        <span>&#8673;</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img4">
+                        <span>Ideias</span>
+                    </div>
+
+                    <div class="content">
+                        <span class="title">Compartilhamento de ideias</span>
+                        <p class="desc">Onde a criatividade e a inovação se encontram. Aqui, acreditamos no poder das ideias para transformar o mundo e queremos fornecer um espaço acolhedor e inspirador para que você compartilhe suas perspectivas únicas.</p>
+                        <p class="descMobile">Onde a criatividade e a inovação se encontram. Aqui, acreditamos no poder das ideias para transformar o mundo e queremos fornecer um espaço acolhedor e inspirador para que você compartilhe suas perspectivas únicas.</p>
+                    </div>
+
+                    <div class="arrow">
+                        <span>&#8673;</span>
+                    </div>
+                </div>
+            </div>
+
             </div>
 
             <div className='bluepart' id="conheca-a-plataforma">

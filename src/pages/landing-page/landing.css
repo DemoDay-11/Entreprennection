@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .text h2{
@@ -44,65 +44,208 @@
     font-weight: 700;
 }
 
-.cards {
+.container {
+    padding-bottom: 16%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#4063B8, #023859);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
+    background-image: url('./images/conexoes.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img2 {
+    width: 360px;
     display: flex;
-    margin-top: 5rem;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./images/mentorias.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 }
 
-.card1 {
-    background-color: #d9d9d9;
-    width: 300px;
-    height: 428px;
+.card .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./images/metas.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 }
 
-.card2 {
-    background-color: #d9d9d9;
-    width: 300px;
-    height: 428px;
+.card .img4 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./images/ideias.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 }
 
-.card3 {
-    background-color: #d9d9d9;
-    width: 300px;
-    height: 428px;
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: 'roboto';
+    transition: all .5s;
+    color: white;
 }
 
-.card4 {
-    background-color: #d9d9d9;
-    width: 300px;
-    height: 428px;
+.card .img2 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: 'roboto';
+    transition: all .5s;
+    color: white;
 }
 
-/* photo1
-photo2
-photo3
-photo4 */
-
-.text1{
-    text-align: center;
-    margin-top: 18rem;
-    font-weight: bold;
+.card .img3 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: 'roboto';
+    transition: all .5s;
+    color: white;
 }
 
-.text2{
-    text-align: center;
-    margin-top: 18rem;
-    font-weight: bold;
+.card .img4 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: 'roboto';
+    transition: all .5s;
+    color: white;
 }
 
-.text3{
-    text-align: center;
-    margin-top: 18rem;
-    font-weight: bold;
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
 }
 
-.text4{
-    text-align: center;
-    margin-top: 18rem;
-    font-weight: bold;
+.card:hover .img2 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img3 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.card .content .desc {
+    font-size: 16px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+    color: white;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+.descMobile{
+    opacity: 0;
 }
 
 .bluepart {
@@ -150,6 +293,7 @@ photo4 */
     height: 100%;
 }
 
+
 .endpart {
     color: black;
 }
@@ -192,6 +336,16 @@ photo4 */
     .card-size{
         width: 100% !important;
     }
+    .desc{
+        display: none;
+    }
+    .content{
+        visibility: visible;
+    }
+    .descMobile{
+        color: white;
+        opacity: 100;
+    }
 }
 
 
@@ -217,6 +371,13 @@ photo4 */
     .btn-cds {
         padding-bottom: 3rem;
     }
+    .desc{
+        display: none;
+    }
+    .descMobile{
+        color: white;
+        opacity: 100;
+    }
 }
 
 @media (max-width:768px) {
@@ -236,11 +397,27 @@ photo4 */
     .header-landing{
         height: 100vh;
     }
+    .desc{
+        display: none;
+    }
+    
+    .descMobile{
+        color: white;
+        opacity: 100;
+    }
 }
 
 @media (max-width:1024px) {
     .cards{
         margin: 0 auto;
         width: 95%;
+    }
+    .desc{
+        display: none;
+    }
+    .descMobile{
+        color: white;
+        opacity: 100;
+        margin-bottom: 100%;
     }
 }
