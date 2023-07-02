@@ -44,7 +44,7 @@
     font-weight: 700;
 }
 
-.container {
+/* .container {
     padding-bottom: 16%;
     width: 100%;
     min-height: 100vh;
@@ -53,13 +53,13 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-}
+} */
 
-.card {
+.cardcont {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 300px;
+    /* width: 300px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,12 +70,13 @@
     transition: all .5s;
 }
 
-.card:hover {
+.cardcont:hover {
     background-image: linear-gradient(#4063B8, #023859);
 }
 
-.card .img {
-    width: 360px;
+.cardcont .img {
+    width:100%;
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,8 +90,8 @@
     opacity: .8;
 }
 
-.card .img2 {
-    width: 360px;
+.cardcont .img2 {
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,8 +105,8 @@
     opacity: .8;
 }
 
-.card .img3 {
-    width: 360px;
+.cardcont .img3 {
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,8 +120,8 @@
     opacity: .8;
 }
 
-.card .img4 {
-    width: 360px;
+.cardcont .img4 {
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +135,7 @@
     opacity: .8;
 }
 
-.card .img span {
+.cardcont .img span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
@@ -143,7 +144,7 @@
     color: white;
 }
 
-.card .img2 span {
+.cardcont .img2 span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
@@ -152,7 +153,7 @@
     color: white;
 }
 
-.card .img3 span {
+.cardcont .img3 span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
@@ -161,7 +162,7 @@
     color: white;
 }
 
-.card .img4 span {
+.cardcont .img4 span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
@@ -170,31 +171,31 @@
     color: white;
 }
 
-.card:hover .img {
-    width: 430px;
+.cardcont:hover .img {
+    /* width: 430px; */
     opacity: 1;
 }
 
-.card:hover .img2 {
-    width: 430px;
+.cardcont:hover .img2 {
+    /* width: 430px; */
     opacity: 1;
 }
 
-.card:hover .img3 {
-    width: 430px;
+.cardcont:hover .img3 {
+    /* width: 430px; */
     opacity: 1;
 }
 
-.card:hover .img {
-    width: 430px;
+.cardcont:hover .img {
+    /* width: 430px; */
     opacity: 1;
 }
 
-.card:hover .img span {
+.cardcont:hover .img span {
     font-size: 28px;
 }
 
-.card .content {
+.cardcont .content {
     padding: 0px 20px;
     height: 0;
     opacity: 0;
@@ -205,24 +206,24 @@
     transform: translateY(30px);
 }
 
-.card:hover .content {
+.cardcont:hover .content {
     height: 260px;
     padding: 20px;
     opacity: 1;
     transform: translateY(0);
 }
 
-.card .content p {
+.cardcont .content p {
     margin: 0;
 }
 
-.card .content .title {
+.cardcont .content .title {
     font-size: 20px;
     font-weight: 600;
     color: white;
 }
 
-.card .content .desc {
+.cardcont .content .desc {
     font-size: 16px;
     font-weight: 100;
     opacity: .8;
@@ -230,17 +231,17 @@
     color: white;
 }
 
-.card .arrow {
+.cardcont .arrow {
     padding: 15px;
     transform: rotate(-180deg);
     transition: all .5s;
 }
 
-.card:hover .arrow {
+.cardcont:hover .arrow {
     transform: rotate(0);
 }
 
-.card .arrow span {
+.cardcont .arrow span {
     font-size: 24px;
 }
 

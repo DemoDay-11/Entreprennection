@@ -33,26 +33,32 @@ function Landing(props) {
             <div className='white'>
                 <div className='text'>
                     <h2>Nossos métodos de trabalho</h2>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
 
-            <div class="container">
-                <div class="card">
-                    <div class="img">
-                        <span>Conexões</span>
-                    </div>
+                <Row className='m-0 px-5'>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={3} className='p-3 d-flex justify-content-center'>
+                        <div class="cardcont">
+                            <div class="img">
+                                <span>Conexões</span>
+                            </div>
 
-                    <div class="content">
-                        <span class="title">Conexões</span>
-                        <p class="desc">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
-                        <p class="descMobile">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
-                    </div>
+                            <div class="content">
+                                <span class="title">Conexões</span>
+                                <p class="desc">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
+                                <p class="descMobile">Bem-vindo à nossa plataforma, o lugar perfeito para conectar-se com pessoas de todo o mundo. Aqui, você encontrará um espaço dedicado a estabelecer novas conexões, expandir sua rede e compartilhar experiências únicas.</p>
+                            </div>
 
-                    <div class="arrow">
-                        <span>&#8673;</span>
-                    </div>
-                </div>
+                            <div class="arrow">
+                                <span>&#8673;</span>
+                            </div>
+                        </div>
+                    </Col>
 
-                <div class="card">
+                    <Col xs={12} sm={6} md={6} lg={6} xl={3} className='p-3 d-flex justify-content-center'>
+                    <div class="cardcont">
                     <div class="img2">
                         <span>Mentorias</span>
                     </div>
@@ -67,8 +73,9 @@ function Landing(props) {
                         <span>&#8673;</span>
                     </div>
                 </div>
-
-                <div class="card">
+                    </Col>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={3} className='p-3 d-flex justify-content-center'>
+                    <div class="cardcont">
                     <div class="img3">
                         <span>Metas</span>
                     </div>
@@ -83,8 +90,9 @@ function Landing(props) {
                         <span>&#8673;</span>
                     </div>
                 </div>
-
-                <div class="card">
+                    </Col>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={3} className='p-3 d-flex justify-content-center'>
+                    <div class="cardcont">
                     <div class="img4">
                         <span>Ideias</span>
                     </div>
@@ -99,7 +107,12 @@ function Landing(props) {
                         <span>&#8673;</span>
                     </div>
                 </div>
-            </div>
+                    </Col>
+                </Row>
+                <br/><br/>
+                <br/>
+                <br/>
+                <br/>
 
             </div>
 
