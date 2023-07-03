@@ -22,10 +22,26 @@
   border-bottom: none !important;
 }
 
+.nav-pills .nav-item .btn-log {
+  color: #FFF !important;
+  display: block;
+  width: 100% !important;
+  margin-top: 125%;
+  border-bottom: none !important;
+  text-decoration: none;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover {
   color: #023859 !important;
   background-color: white !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .btn-log:hover {
+  color: #023859 !important;
+  background-color: white !important;
+  border-radius: 5px;
 }
 
 .textobranco {
@@ -47,6 +63,12 @@
 @media (min-width: 576px) and (max-width: 768px) {
   .homeImg {
     margin: 0  38% !important;
+  }
+}
+
+@media (max-width:768px) {
+  .nav-pills .nav-item .btn-log {
+    margin-top: 55%;
   }
 }
 

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Tabs from 'react-bootstrap/Tabs';
 import MeuPerfil from '../../pages/meu-perfil/meu-perfil';
-import Feed from '../../pages/feed/feed';
 import Empresas from '../../pages/empresas/empresas';
 import Mentorias from '../../pages/mentorias/mentorias';
 import Plus from '../../pages/plus/plus';
@@ -14,11 +12,11 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import SegundaConexao from '../../pages/conexoes/segunda';
 import imagem from "../../img/site-logo.jpg";
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FiMenu } from "react-icons/fi";
+import { Link, useNavigate } from 'react-router-dom';
 
-function Menu() {
+const Menu = (props) => {
   const [key, setKey] = useState('home');
   const [show, setShow] = useState(false);
 
@@ -39,8 +37,8 @@ function Menu() {
           setScreenSize(getCurrentDimension())
       }
       window.addEventListener('resize', updateDimension);
-      console.log("largura:", screenSize.width);
-      console.log("altura:", screenSize.height);
+      // console.log("largura:", screenSize.width);
+      // console.log("altura:", screenSize.height);
   
   
       return(() => {
@@ -48,10 +46,25 @@ function Menu() {
       })
   }, [screenSize])
 
+  const Navigate = useNavigate();
+  
+  useEffect(() => {
+    setSelectedTab(window.location.pathname.substring(1));
+    console.log(selectedTab)
+  }, []);
+
+  const [selectedTab, setSelectedTab] = useState("home");
+  function handleClick(e) {
+    console.log(e);
+    setSelectedTab(e);
+    window.history.replaceState({}, "", "/" + e);
+  }
+
   return (
     <Tab.Container
       id="controlled-tab-example"
-      defaultActiveKey="home"
+      activeKey={selectedTab}
+      onSelect={(e) => handleClick(e)}
       className="tabs"
       style={{ backgroundColor: 'PINK !important' }}
     >
@@ -90,6 +103,9 @@ function Menu() {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="noticias" title="Noticias">Notícias</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link to="/login" className='btn-log px-3 py-2'>Sair</Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -192,6 +208,9 @@ function Menu() {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="noticias" title="Noticias" onClick={handleClose}>Notícias</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link to="/login" className='btn-log px-3 py-2'>Sair</Link>
               </Nav.Item>
             </Nav>
         </Offcanvas.Body>

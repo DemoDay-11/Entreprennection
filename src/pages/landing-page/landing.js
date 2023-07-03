@@ -10,7 +10,7 @@ function Landing(props) {
     const Navigate = useNavigate();
 
     const goToLogin = () => {
-        Navigate("/Login")
+        Navigate("/login")
     }
 
     function conhecaAPlataforma() {

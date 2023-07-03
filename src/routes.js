@@ -1,5 +1,5 @@
 //Routes.js
-import { Route, Routes as RoutesDom } from "react-router-dom"
+import { Route, Routes as RoutesDom, useNavigate } from "react-router-dom"
 import Login from "./pages/login/login";
 import Cadastramento from "./pages/cadastramento/cadastramento";
 
@@ -8,12 +8,14 @@ import Landing from "./pages/landing-page/landing";
 
 
 const Routes = () => {
+  let nav = useNavigate();
+
   return (
       <RoutesDom>
         <Route path="/" index element={<Landing />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="Signup" element={<Cadastramento />} />
-        <Route path="Home" element={<Menu />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Cadastramento />} />
+        <Route path="home" element={<Menu nav={nav}/>} />
       </RoutesDom>
   )
 }

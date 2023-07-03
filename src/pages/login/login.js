@@ -67,7 +67,7 @@ function Login() {
 
   const handleLogin = () => {
     if (email === "entrennection@gmail.com" && password === "1234" || email === "admin@admin" && password === "admin") {
-      Navigate("/Home");
+      Navigate("/home");
     } else {
       alert("Senha ou Email incorretos, tente novamente");
     }
