@@ -124,7 +124,7 @@ function Mentorias() {
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={12}><h1 className='titulocompra py-4'>Mentoria Agendada!</h1></Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={12}><p className='textparabens text-center pt-1'>
-                Parabéns! Sua mentoria foi marcada e estamos ansioso para vê-lo em sua nova jornada. Seu mentor ira ajuda-lo para responder suas duvidas, fornecer orientações e apoiar o seu aprendizado. 
+                Parabéns! Sua mentoria foi marcada e estamos ansiosos para vê-lo em sua nova jornada. Seu mentor ira ajuda-lo para responder suas duvidas, fornecer orientações e apoiar o seu aprendizado. 
                 Juntos, vamos explorar novas ideias e desafios, para que você possa alcançar seus objetivos. Estamos empolgados para você começar essa mentoria e temos certeza de que será uma experiência enriquecedora. Até breve! </p>
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center py-3'>
