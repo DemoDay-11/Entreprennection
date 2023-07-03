@@ -6,7 +6,7 @@ import {FaLinkedinIn} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
 import imagem from "../../img/site-logo.jpg";
 
-const Footer = () => <footer className="page-footer font-small blue py-4">
+const Footer = () => <footer className="page-footer font-small py-4">
     <div className="container-fluid text-center text-md-left">
         <div className="row ">
             {/* <div className="img col-md-6 mt-md-6 mt-6 py-3">
