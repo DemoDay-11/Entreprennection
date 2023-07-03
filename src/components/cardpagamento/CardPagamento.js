@@ -8,7 +8,8 @@ import Detalhes from '../../pages/detalhes/Detalhes';
 
 export default function CardPagamento() {
 
-    const [detalhes, setDetalhes] = useState(false)
+    // const [detalhes, setDetalhes] = useState(false)
+
 
     return(
     
