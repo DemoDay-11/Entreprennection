@@ -4,7 +4,6 @@ import CardConexoes from './components/CardConexoes';
 import CardPostagens from './components/CardPostagens';
 import { Col,Row } from 'react-bootstrap';
 
-
 function MeuPerfil() {
   return (
     <div className='meuPerfil'>

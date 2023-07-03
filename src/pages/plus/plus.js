@@ -1,12 +1,15 @@
 import './plus.css';
 import Button from 'react-bootstrap/Button';
 import { Col,Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import CardPagamento from '../../components/cardpagamento/CardPagamento';
 
 function Plus() {
   const [pagamento, setPagamento] = useState(false)
+
+ 
+
 
   return (
     <div className="Plus m-0 p-0">
@@ -33,7 +36,7 @@ function Plus() {
         <>
           <h1 className='tituloempresa py-4'>Planos</h1>
           <CardPagamento />
-        </> 
+        </>
       }
     </div>
   );
