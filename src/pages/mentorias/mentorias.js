@@ -7,15 +7,15 @@ import Cardmentor from '../../components/cardmentor/cardmentor';
 import Calendar from 'react-calendar';
 import './calendario.css';
 import imagem from "../../img/cachorro.jpg";
+import {MdVerified} from "react-icons/md";
 
 function Mentorias() {
-  const [agendar, setAgendar] = useState(false)
-  const [calendario, setCalendario] = useState(false)
+  const [passo, setPasso] = useState(1)
   const [value, onChange] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(null);
 
-  const showCalendar = (calendario) => {
-    setCalendario(calendario)
+  const showCalendar = (passo) => {
+    setPasso(passo)
   }
 
   const handleTimeSelect = (time) => {
@@ -24,9 +24,10 @@ function Mentorias() {
 
   const handleAgendarClick = () => {
     if (selectedTime) {
-      // Logic to schedule the selected time
+      setPasso(4)
       console.log("Horário agendado:", selectedTime);
     } else {
+      alert("Nenhum horário selecionado.")
       console.log("Nenhum horário selecionado.");
     }
   };
@@ -35,7 +36,7 @@ function Mentorias() {
   return (
     <div className='cont-mentoria'>
       {
-        agendar == false ?
+        passo == 1 ?
         <div className="Mentorias m-0 p-0">
           <h1 className='titulomentoria py-4'>Mentorias</h1>
           <Row className='p-0 m-0'>
@@ -49,13 +50,12 @@ function Mentorias() {
             </Col>
 
             <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center py-3'>
-              <Button variant="dark" className='botao-mentoria' onClick={() => setAgendar(true)}><p>Agendamentos</p></Button>
+              <Button variant="dark" className='botao-mentoria' onClick={() => setPasso(2)}><p>Agendamentos</p></Button>
             </Col>
           </Row>
         </div>
         :
-        agendar == true && calendario== false?
-
+        passo == 2 ?
         <div className="agendar">
           <h1 className='titulomentoria py-4'>Agende já</h1>
           <p className='textagendar text-center pt-1'>Agende a sua mentoria e alavanque o seu negócio </p>
@@ -72,6 +72,7 @@ function Mentorias() {
             </Row>
         </div>
         :
+       passo == 3 ?
         <div className="Mentoria">
           <div className="headerM">
             <h1 className="tituloM">Agendamento de mentoria</h1><br/><br/>
@@ -114,6 +115,24 @@ function Mentorias() {
           </Row>
 
         </div>
+        : 
+        passo == 4 ?
+        <div className='d-flex align-items-center icone-verificado'>
+          <Row className='p-0 m-0'>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12} className=' d-flex justify-content-center'>
+              <MdVerified size={96} color='#2196F3'/>
+            </Col>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12}><h1 className='titulocompra py-4'>Mentoria Agendada!</h1></Col>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12}><p className='textparabens text-center pt-1'>
+                Parabéns! Sua mentoria foi marcada e estamos ansioso para vê-lo em sua nova jornada. Seu mentor ira ajuda-lo para responder suas duvidas, fornecer orientações e apoiar o seu aprendizado. 
+                Juntos, vamos explorar novas ideias e desafios, para que você possa alcançar seus objetivos. Estamos empolgados para você começar essa mentoria e temos certeza de que será uma experiência enriquecedora. Até breve! </p>
+            </Col>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12} className='d-flex justify-content-center py-3'>
+              <Button variant="dark" className='botao-pagamento' onClick={() => setPasso(1)}><p>Confirmar Mentoria</p></Button>
+            </Col>
+          </Row>
+        </div>
+        : null
       }
     </div>
   );

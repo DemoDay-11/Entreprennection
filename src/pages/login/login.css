@@ -27,6 +27,7 @@
 
 .botao-login-1 {
   background-color: #304A6E !important;
+  border: none !important;
 }
 
 @media (max-width: 985px) {

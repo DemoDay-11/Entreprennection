@@ -29,6 +29,7 @@
   .botao-login {
     /* width: 30%; */
     background-color: #00436C !important;
+    border: none !important;
   }
   
   .botao-login:hover {

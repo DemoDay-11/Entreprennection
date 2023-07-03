@@ -6,9 +6,12 @@ import { useState } from 'react';
 
 const Cardmentor = (props) => {
     const [calendario, setCalendario] = useState(false)
+    const [passo, setPasso] = useState(3)
+    
 
     const openCalendar = () => {
-        props.showCalendar(!calendario)
+        console.log(passo)
+        props.showCalendar(passo)
     }
 
     return (

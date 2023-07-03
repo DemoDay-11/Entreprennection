@@ -23,6 +23,7 @@
 .botao-agendar {
     /* width: 30%; */
     background-color: #00436C !important;
+    border: none !important;
   } 
   
   .botao-agendar:hover {
