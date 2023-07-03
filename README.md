@@ -64,7 +64,10 @@
 
 <h2 align="center"> Modelagem do banco de dados: </h2>
 
-<img src="https://i.imgur.com/54mjS68.png" />
+![image](https://github.com/Entrennection/Entrennection/assets/86437334/0b57b802-3940-4e6e-a7fe-7f49325aab6f)
+
+
+
 <h2 aling="center">Contribuição</h2>
 
 Este projeto é resultado da colaboração de 8 integrantes, que se uniram para criar uma solução voltada para os microempreendedores. 
@@ -76,5 +79,3 @@ Caso queira conhecer os integrantes, acesse nossos links:
 <h2 aling="center">Licença</h2>
 ...
 
-
-MODELAGEM CONCEITUAL DE BANCO DE DADOS: https://app.diagrams.net/#G1cZOpRSaUnkf1bidtrjGbLP72Gi4OM_s9
