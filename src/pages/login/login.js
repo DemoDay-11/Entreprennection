@@ -25,7 +25,7 @@ function Login() {
 
   // login e senha
   const handleLogin = () => {
-    if (email === 'entrennection' && password === '123' || email === 'admin' && password === 'admin') {
+    if (email === 'entrennection@gmail.com' && password === '123' || email === 'admin@admin' && password === 'admin') {
       Navigate("/Home");
     } else {
       alert('Login inválido. Tente novamente.');
@@ -86,7 +86,7 @@ function Login() {
           <Footer></Footer>
         </Col>
 
-        
+
         {/* <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{backgroundColor: "pink"}}>
           meu footer
         </Col> */}
