@@ -7,9 +7,7 @@ import CardPagamento from '../../components/cardpagamento/CardPagamento';
 
 function Plus() {
   const [pagamento, setPagamento] = useState(false)
-
  
-
 
   return (
     <div className="Plus m-0 p-0">

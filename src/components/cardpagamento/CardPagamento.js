@@ -8,13 +8,12 @@ import Detalhes from '../../pages/detalhes/Detalhes';
 
 export default function CardPagamento() {
 
-    // const [detalhes, setDetalhes] = useState(false)
 
 
     return(
     
     <Row className='p-0 m-0'>
-    
+
         <Col xs={12} sm={6} md={6} lg={6} xl={6} className='d-flex justify-content-center py-4'>
             <Card className='tamanhocard text-center'>
                 <Card.Body>
@@ -49,8 +48,9 @@ export default function CardPagamento() {
                     <Button className='Assine'>Assine</Button>
                 </Card.Body>
             </Card>
-        </Col> 
+        </Col>
+        
     </Row>
-            
+          
     )
 }
