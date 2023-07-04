@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { Col,Row } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import CardPagamento from '../../components/cardpagamento/CardPagamento';
+import CardPagamento from '../cardpagamento/CardPagamento';
 
 function Plus() {
   const [pagamento, setPagamento] = useState(false)

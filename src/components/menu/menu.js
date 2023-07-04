@@ -4,7 +4,7 @@ import Empresas from '../../pages/empresas/empresas';
 import Mentorias from '../../pages/mentorias/mentorias';
 import Plus from '../../pages/plus/plus';
 import Home from '../../pages/home/home';
-import Noticias from '../../pages/noticias/Noticias';
+
 import './menu.css';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
@@ -102,9 +102,6 @@ const Menu = (props) => {
                 <Nav.Link eventKey="plus" title="Plus">Plus</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="noticias" title="Noticias">Notícias</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
                 <Link to="/login" className='btn-log px-3 py-2'>Sair</Link>
               </Nav.Item>
             </Nav>
@@ -129,9 +126,6 @@ const Menu = (props) => {
               </Tab.Pane>
               <Tab.Pane eventKey="plus">
                 <Plus /> 
-              </Tab.Pane>
-              <Tab.Pane eventKey="noticias">
-                <Noticias />
               </Tab.Pane>
             </Tab.Content>
           </Col>
@@ -174,9 +168,7 @@ const Menu = (props) => {
               <Tab.Pane eventKey="plus">
                 <Plus />
               </Tab.Pane>
-              <Tab.Pane eventKey="noticias">
-                <Noticias />
-              </Tab.Pane>
+              
             </Tab.Content>
           </Col>
         </Row>
@@ -205,9 +197,6 @@ const Menu = (props) => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="plus" title="Plus" onClick={handleClose}>Plus</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="noticias" title="Noticias" onClick={handleClose}>Notícias</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Link to="/login" className='btn-log px-3 py-2'>Sair</Link>
