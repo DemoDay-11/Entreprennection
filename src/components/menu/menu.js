@@ -11,7 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import SegundaConexao from '../../pages/conexoes/segunda';
-import imagem from "../../img/site-logo.jpg";
+import imagem from "./LOGO DEDMODAY.png";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FiMenu } from "react-icons/fi";
 import { Link, useNavigate } from 'react-router-dom';
