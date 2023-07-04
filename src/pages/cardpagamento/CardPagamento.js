@@ -3,16 +3,16 @@ import './CardPagamento.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 
 export default function CardPagamento(props) {
-    const Navigate = useNavigate();
+   
 
-    const goToCompra = () => {
-        Navigate("/compra")
-    }
+//     const goToCompra = () => {
+//         Navigate("/compra")
+//     }
 
 
     return(
@@ -31,7 +31,7 @@ export default function CardPagamento(props) {
                     <Card.Text className='PrecoGrandeDois'>
                         R$39,99
                     </Card.Text>
-                    <Button className='Assine' onClick={goToCompra}>Assine</Button>
+                    <Button className='Assine' >Assine</Button>
                 </Card.Body>
             </Card>
         </Col>
@@ -50,7 +50,8 @@ export default function CardPagamento(props) {
                     <Card.Text className='PrecoGrande'>
                         <span classname='TextCinza'>R$350,00</span>
                     </Card.Text>
-                    <Button className='Assine' onClick={goToCompra}>Assine</Button>
+                    {/* <Button className='Assine' onClick={goToCompra}>Assine</Button> */}
+                    <Button className='Assine' >Assine</Button>
                 </Card.Body>
             </Card>
         </Col>
