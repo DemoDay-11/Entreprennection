@@ -14,8 +14,8 @@ function Cardconexao() {
                     <Col xs={12} sm={12} md={10} lg={10} xl={10}>
                         <Row>
                             <Col xs={12} sm={12} md={10} lg={11} xl={11}>
-                                <p className="card-text mb-0 font-nome">Luiz da Pamonha</p>
-                                <p className="card-text mb-0 font-empresa">Google - Mentor</p>
+                                <p className="card-text mb-0 font-nome">Luiz dos Santos</p>
+                                <p className="card-text mb-0 font-empresa">Confeitos e festas</p>
                                 <p className="card-text mb-0 font-bio">Eu sou o luiz, gosto de viajar, andar de carro, comprar tenis, desenvolver e beber tambem.</p>
                             </Col>
                             <Col xs={12} sm={12} md={2} lg={1} xl={1} className='d-flex justify-content-center'>
