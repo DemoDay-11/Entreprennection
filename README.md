@@ -79,4 +79,3 @@ Caso queira conhecer os integrantes, acesse nossos links:
 <h2 aling="center">Licença</h2>
 ...
 
-"# Entrennection" 
